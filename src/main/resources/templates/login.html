@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Login</title>
+    <!-- <script type="text/javascript">
+      //   alert("Hello World");
+      console.log("Hello World");
+      var name = "Trevor Page";
+      var number = 5;
+
+      var car;
+      var tesla = null;
+      var person = {
+        name: "Trevor",
+        age: 30,
+        address: {
+          street: "123 Fake St",
+          city: "Toronto",
+          province: "Ontario",
+          postalCode: "M1M1M1",
+        },
+      };
+      console.log(
+        `the value of "car" is  ${car} and the data type is ${typeof car}`
+      );
+      console.log(
+        `the value of 'tesla' is  ${tesla} and the data type is ${typeof tesla}`
+      );
+      console.log(
+        `the value of 'person' is  ${person} and the data type is ${typeof person}`
+      );
+      console.log(person);
+    </script> -->
+</head>
+
+<body>
+<h1>Login Page</h1>
+<div>
+    <label for="username"> Username: </label>
+    <input type="text" th:field="${user.username}" id="username"/><!-- the id declaration is to be use by js DOM to apply properties to this element-->
+</div>
+<div>
+    <label for="password">Password:</label>
+    <input type="text" th:field="${user.password}" id="password"/>
+</div>
+<div>
+    <button type="button" id="submitBtn">Submit if already user</button>
+</div>
+<div>
+    <button type="button" id="registerBtn">Register if new user</button>
+</div>
+
+<script type="text/javascript" src="../static/loginpract.js"></script>
+<!--js script tag at the end of the body tag. Is safest place -->
+</body>
+</html>
